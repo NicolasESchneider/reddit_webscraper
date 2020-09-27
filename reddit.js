@@ -4,7 +4,7 @@ const SUBREDDIT = `AskReddit`;
 
 export const getPostTitles = async () => {
     const browser = await puppeteer.launch({
-        // headless: false
+        headless: false
         // comment above line in to see what is happening
     });
     const page = await browser.newPage()
